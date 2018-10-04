@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metric/Imperial Converter</title>
+    <meta name="description" content="Convert between Metric & Imperial">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./public/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Metric/Imp Converter
+      </h1>
+    </header>
+    <div id="form">
+      <form id="convertForm" class="border" action="/api/convert">
+        <input type="text" required id="convertField" name="input" placeholder="3.1kg">
+        <input id="convert" type="submit" value="Convert">
+      </form>
+      <p id="result"></p>
+
+    </div>
+    <div id="Example" style=" margin-top: 5%">
+     
+      <h3>Example usage:</h3>
+      <code>/api/convert?input=4gal</code><br>
+      <code>/api/convert?input=1/2km</code><br>
+      <code>/api/convert?input=5.4/3lbs</code><br>
+      <code>/api/convert?input=kg</code><br>
+      <h3>Example return:</h3>
+      <code>{initNum: 3.1, initUnit: 'mi', returnNum: 5.0000008, returnUnit: 'km', string: '3.1 miles converts to 5.00002 kilometers'}</code>
+    </div>
+    
+  </body>
+</html>

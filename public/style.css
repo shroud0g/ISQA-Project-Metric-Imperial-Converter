@@ -1,0 +1,24 @@
+html {
+    text-align: center;
+  }
+  header {
+    margin: 150px;
+  }
+  form {
+    margin: 150px;
+  }
+  
+  #convertField {
+    width: 250px;
+    border-radius: 5px;
+  }
+  
+  #convert {
+    margin: 0 auto;
+  }
+  
+  #Example {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+  }
